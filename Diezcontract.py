@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.getenv("")
-FAMILY_ROLE_ID = int(os.getenv(""))
+TOKEN = os.getenv("DISCORD_TOKEN")
+FAMILY_ROLE_ID = int(os.getenv("FAMILY_ROLE_ID"))
 
 intents = discord.Intents.default()
 intents.members = True
